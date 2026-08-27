@@ -1,0 +1,7 @@
+# Deploy en Netlify — sitio estático generado por Next.js (output: "export")
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"

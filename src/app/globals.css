@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Franki — sistema de diseño (premium, inspirado en la referencia)
+   Verde bosque + terracota + crema · Fraunces + Instrument Sans
+   ============================================================ */
+@theme {
+  --color-forest:        #1F2E25; /* verde bosque: primario, títulos, secciones oscuras */
+  --color-forest-700:    #27392E;
+  --color-forest-600:    #35493C;
+  --color-terracotta:    #C6795D; /* acento: CTA, highlights */
+  --color-terracotta-600:#B5654A;
+  --color-terracotta-100:#EDD9CE;
+  --color-cream:         #F8F6F1; /* fondo cálido */
+  --color-cream-200:     #F1ECE1; /* crema alterna (secciones) */
+  --color-card:          #FFFFFF;
+  --color-ink:           #23281F; /* texto */
+  --color-muted:         #6E7167; /* texto secundario */
+  --color-line:          #E6E0D4; /* bordes */
+  --color-logo-orange:   #D9721F;
+
+  --font-serif: var(--font-fraunces);
+  --font-sans:  var(--font-instrument);
+
+  --radius-xl2: 1.75rem;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { font-family: var(--font-serif), Georgia, serif; }
+
+::selection { background: var(--color-terracotta); color: #fff; }
+
+/* Reveal on scroll (progressive enhancement) */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  html { scroll-behavior: auto; }
+}
