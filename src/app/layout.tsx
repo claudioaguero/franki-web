@@ -32,7 +32,9 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#1F2E25",
+  themeColor: "#F8F6F1",
+  // El sitio es de esquema claro: evita que Chrome (Android) lo "oscurezca" a la fuerza
+  colorScheme: "light",
 };
 
 export default function RootLayout({
