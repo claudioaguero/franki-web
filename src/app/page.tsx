@@ -13,10 +13,12 @@ const jsonLd = {
   "@type": "VeterinaryCare",
   name: "Franki Clínica Veterinaria",
   description:
-    "Clínica veterinaria en Asunción: consultas, vacunación, cirugía, estética, hotel y pet shop.",
+    "Clínica veterinaria en Asunción: consultas, vacunación, cirugía, estética, hotel, pet shop y delivery.",
   url: "https://frankiveterinaria.com.py/",
+  image: "https://frankiveterinaria.com.py/og-image.png",
   telephone: "+595982297132",
   priceRange: "₲₲",
+  areaServed: ["Asunción", "Gran Asunción"],
   address: {
     "@type": "PostalAddress",
     streetAddress: "Julio Correa y Molas López",

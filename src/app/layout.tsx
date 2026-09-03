@@ -20,14 +20,41 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://frankiveterinaria.com.py"),
   title: "Franki · Clínica Veterinaria en Asunción",
   description:
-    "Clínica veterinaria en Asunción: consultas, vacunación, cirugía, estética, hotel y pet shop. Atención con ciencia y cariño, de lunes a lunes de 8 a 20 hs.",
+    "Clínica veterinaria en Asunción: consultas, vacunación, cirugía, estética, hotel, pet shop y delivery. Atención con ciencia y cariño, de lunes a lunes de 8 a 20 hs.",
+  keywords: [
+    "veterinaria Asunción",
+    "clínica veterinaria",
+    "veterinaria Paraguay",
+    "urgencias veterinarias Asunción",
+    "hotel para mascotas",
+    "pet shop Asunción",
+    "vacunación mascotas",
+  ],
+  alternates: { canonical: "/" },
   icons: { icon: "/franki-icon.png", apple: "/apple-icon.png" },
   openGraph: {
     title: "Franki · Clínica Veterinaria en Asunción",
     description:
-      "Atención médica responsable para tu mascota: consultas, cirugía, estética, hotel y pet shop. Lunes a lunes de 8 a 20 hs.",
+      "Atención médica responsable para tu mascota: consultas, cirugía, estética, hotel, pet shop y delivery. Lunes a lunes de 8 a 20 hs.",
+    url: "/",
+    siteName: "Franki Clínica Veterinaria",
     type: "website",
     locale: "es_PY",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Franki Clínica Veterinaria en Asunción",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Franki · Clínica Veterinaria en Asunción",
+    description:
+      "Atención médica responsable para tu mascota. Lunes a lunes de 8 a 20 hs.",
+    images: ["/og-image.png"],
   },
 };
 
