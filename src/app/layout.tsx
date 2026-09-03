@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Franki · Clínica Veterinaria en Asunción",
   description:
     "Clínica veterinaria en Asunción: consultas, vacunación, cirugía, estética, hotel y pet shop. Atención con ciencia y cariño, de lunes a lunes de 8 a 20 hs.",
-  icons: { icon: "/logo-franki-2.png", apple: "/logo-franki-2.png" },
+  icons: { icon: "/franki-icon.png", apple: "/apple-icon.png" },
   openGraph: {
     title: "Franki · Clínica Veterinaria en Asunción",
     description:

@@ -19,18 +19,12 @@ export const site = {
   hours: "Lunes a lunes · 8:00 a 20:00 hs",
 };
 
-// Banco de imágenes provisorio (Unsplash) — reemplazar por fotos reales de Franki.
-const u = (id: string, w = 1200) =>
-  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=72`;
-
+// Fotos reales de Franki (optimizadas en /public/img).
 export const img = {
-  hero: u("photo-1654895716780-b4664497420d", 1400),
-  consulta: u("photo-1644675272883-0c4d582528d8", 900),
-  nosotros: u("photo-1700665537604-412e89a285c3", 1200),
-  gato: u("photo-1579452113472-2f2a764188ac", 900),
-  hotel: u("photo-1548199973-03cce0bbc87b", 1200),
-  estetica: u("photo-1588943211346-0908a1fb0b01", 900),
-  perro: u("photo-1561037404-61cd46aa615b", 900),
+  hero: "/img/hero.jpg", // vet con perrito
+  nosotros: "/img/nosotros.jpg", // vet con labrador
+  hotel: "/img/hotel.jpg", // hospedaje real
+  analisis: "/img/analisis.jpg", // extra, disponible
 };
 
 export type Service = {
